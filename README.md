@@ -11,12 +11,12 @@ I created this discord nft verification bot by cloning the candy-machine-v2-mint
 1. Build the project. Example:
 
 ```
-cd candy-machine-v2-mint
+cd discord-holder-verification
 yarn install
 yarn build
 ```
 
-3. Define your environment variables using the instructions below, and start up the server with `npm start`.
+3. Define your environment variables and start up the server with `npm start`.
 
 # Getting Started with Create React App
 
