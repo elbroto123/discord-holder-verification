@@ -1,38 +1,15 @@
-# Candy-Machine-V2-Mint
-
-The Candy-Machine-V2-Mint project is a modified [Candy-Machine-Mint](https://github.com/exiled-apes/candy-machine-mint) frontend that works with the latest Candy Machine V2 program on Solana. 
-
-For instructions on how to set up a v2 candy machine, please refer to Metaplex's documentation [here](https://docs.metaplex.com/candy-machine-v2/Introduction)
-
-## Candy-Machine-Mint
-
-The [Candy-Machine-Mint](https://github.com/exiled-apes/candy-machine-mint) project is designed to let users fork, customize, and deploy their own candy machine mint app to a custom domain, ultra fast.
-
-A candy machine is an on-chain Solana program (or smart contract) for managing fair mint. Fair mints:
-* Start and finish at the same time for everyone.
-* Won't accept your funds if they're out of NFTs to sell.
-
-The Candy-Machine-Mint project is meant to be as simple and usable as possible, accessible to everyone from long-time crypto devs to junior React devs with a vague interest in NFTs. Our goal is to empower users to create their own front ends to display, sell, and manage their NFTs as simply as possible by just updating a few styled components and following a well-documented process for setup and shipping.
-
 ## Getting Set Up
+
+I created this discord nft verification bot by cloning the candy-machine-v2-mint repository and removing the code that I don't need. I did this to reuse the functionality from the connection.tsx file and some other functionality that was already implemented for e.g. wallt connection. To have a fast setup for the discord bot, which can talk to the discord API. The code I wrote there can be found in the autocode.js file.
 
 ### Prerequisites
 
-* Ensure you have recent versions of both `node` and `yarn` installed.
-
-* Follow the instructions [here](https://docs.solana.com/cli/install-solana-cli-tools) to install the Solana Command Line Toolkit.
-
-* Follow the instructions [here](https://hackmd.io/@levicook/HJcDneEWF) to install the Metaplex Command Line Utility.
-  * Installing the Command Line Package is currently an advanced task that will be simplified eventually.
+- Ensure you have recent versions of both `node` and `yarn` installed.
 
 ### Installation
 
-1. Fork the project, then clone down. Example:
-```
-git clone git@github.com:Soul-Dogs-City/candy-machine-v2-mint.git
-```
+1. Build the project. Example:
 
-2. Build the project. Example:
 ```
 cd candy-machine-v2-mint
 yarn install
@@ -40,29 +17,6 @@ yarn build
 ```
 
 3. Define your environment variables using the instructions below, and start up the server with `npm start`.
-
-#### Environment Variables
-
-To run the project, first rename the `.env.example` file at the root directory to `.env` and update the following variables:
-
-```
-REACT_APP_CANDY_MACHINE_ID=__PLACEHOLDER__
-```
-
-This is a Solana account address. You can get the value for this from the `.cache/temp.json` file. This file is created when you run the `ts-node candy-machine-v2-cli.ts upload` command in terminal.
-
-
-```
-REACT_APP_SOLANA_NETWORK=devnet
-```
-
-This identifies the Solana network you want to connect to. Options are `devnet`, `testnet`, and `mainnet`.
-
-```
-REACT_APP_SOLANA_RPC_HOST=https://api.devnet.solana.com
-```
-
-This identifies the RPC server your web app will access the Solana network through.
 
 # Getting Started with Create React App
 
