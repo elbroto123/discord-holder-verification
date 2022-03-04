@@ -1,6 +1,6 @@
 ## Getting Set Up
 
-I created this discord nft verification bot by cloning the candy-machine-v2-mint repository and removing the code that I don't need. I did this to reuse the functionality from the connection.tsx file and some other functionality that was already implemented for e.g. wallt connection. To have a fast setup for the discord bot, which can talk to the discord API. The code I wrote there can be found in the autocode.js file.
+I created this discord nft verification bot by cloning the candy-machine-v2-mint repository and removing the code that I don't need. I did this to reuse the functionality from the connection.tsx file and some other functionality that was already implemented for e.g. wallet connection. To have a fast setup for the discord bot, which can talk to the discord API, autocode is used. The code I wrote there can be found in the autocode.js file.
 
 ### Prerequisites
 
